@@ -3,7 +3,7 @@ const customer = {
   balance: 24000,
   discount: 0.1,
   orders: ['Burger', 'Pizza', 'Salad'],
-  // Изменить код ниже этой линии
+
   getBalance() {
     return this.balance;
   },
@@ -18,9 +18,8 @@ const customer = {
   },
   addOrder(cost, order) {
     this.balance -= cost - cost * this.discount;
-    this.orders.push(this.order);
+    this.orders.push(order);
   },
-  // Изменить код выше этой линии
 };
 
 customer.setDiscount(0.15);
